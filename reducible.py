@@ -163,15 +163,15 @@ def main():
 
     # determine prime number N that is greater than twice
     # the length of the word_list
-    N = 2 * length + 1
-    while not is_prime(N):
-        N += 1
+    n = 2 * length + 1
+    while not is_prime(n):
+        n += 1
 
     # create an empty hash_list
     hash_list = []
 
     # populate the hash_list with N blank strings
-    for _ in range(N):
+    for _ in range(n):
         hash_list.append("")
 
     # hash each word in word_list into hash_list
@@ -184,13 +184,13 @@ def main():
     # let us assume it is 10 percent (fairly safe) of the words
     # then M is a prime number that is slightly greater than
     # 0.2 * size of word_list
-    M = int(0.2 * length) + 1
-    while not is_prime(M):
-        M += 1
+    m = int(0.2 * length) + 1
+    while not is_prime(m):
+        m += 1
     hash_memo = []
 
     # populate the hash_memo with M blank strings
-    for _ in range(M):
+    for _ in range(m):
         hash_memo.append("")
 
     # create an empty list reducible_words
